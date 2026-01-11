@@ -20,29 +20,25 @@ html,body{
   min-height:100%;
 }
 
-/* --- Tyne Bridge BACKGROUND behind the whole site --- */
-/* Make sure your image exists at: assets/img/background-tyne-bridge.jpg */
-body{
-  position:relative;
-  min-height:100vh;
-
-body::before{
-  content:"";
-  position:fixed;
-  inset:0;
-  background:url("../img/background-tyne-bridge.jpg") center/cover no-repeat;
-  opacity:0.55;
-  pointer-events:none;
-  z-index:-2;
+/* Tyne Bridge background */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: url("../img/background-tyne-bridge.jpg") center/cover no-repeat fixed;
+  opacity: 0.42;       /* bridge visibility */
+  pointer-events: none;
+  z-index: -2;
 }
 
-body::after{
-  content:"";
-  position:fixed;
-  inset:0;
-  background:rgba(244,246,248,0.55);
-  pointer-events:none;
-  z-index:-1;
+/* Soft tint so text is readable */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.35);  /* dark tint */
+  pointer-events: none;
+  z-index: -1;
 }
 
 
