@@ -1,11 +1,18 @@
 :root{
+  /* Existing site variables */
   --text:#0f172a;
   --muted:#475569;
   --card: rgba(255,255,255,.60);
   --border: rgba(15,23,42,.12);
-  --radius: 18px;
-  --shadow: 0 14px 36px rgba(2,6,23,.14);
   --radius:18px;
+  --shadow: 0 14px 36px rgba(2,6,23,.14);
+
+  /* Brand colours (from your logo) */
+  --brand-blue: #1F2F46;
+  --brand-gold: #C9A13A;
+  --brand-gold-light: #E2C873;
+  --brand-grey: #6B6F73;
+  --brand-white: #FFFFFF;
 }
 
 *{box-sizing:border-box}
